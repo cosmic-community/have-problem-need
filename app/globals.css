@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-studio-950 text-gray-100 font-sans antialiased;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-studio-900 border border-studio-700 rounded-xl overflow-hidden transition-all duration-200 hover:border-accent-500/60 hover:shadow-lg hover:shadow-accent-600/10;
+  }
+
+  .section-title {
+    @apply text-2xl md:text-3xl font-bold text-white;
+  }
+
+  .prose-story {
+    @apply text-gray-300 leading-relaxed;
+  }
+
+  .prose-story p {
+    @apply mb-4;
+  }
+
+  .prose-story h1,
+  .prose-story h2,
+  .prose-story h3 {
+    @apply text-white font-semibold mt-6 mb-3;
+  }
+}
